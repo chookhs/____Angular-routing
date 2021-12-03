@@ -1,0 +1,68 @@
+.container {
+  max-width: 992px;
+
+  padding: 50px;
+}
+
+button {
+  border: 1px solid darkred;
+  border-radius: 7px;
+  padding: 7px 10px;
+  margin: 15px 0;
+  background-color: transparent;
+  color: darkred;
+  font-style: 1rem;
+  cursor: pointer;
+
+}
+
+html {
+  font-family: "Arial Black";
+}
+
+nav a {
+  display: inline-block;
+  border: 1px solid darkred;
+  text-decoration: none;
+  transition: 0.5s;
+  color: tomato;
+  margin-right: 10px;
+  padding: 7px 10px;
+  border-radius: 7px;
+  min-width: 70px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.active {
+    background-color: tomato;
+    color: white;
+  }
+}
+
+
+.phrases {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  margin: 2px;
+  padding: 5px 0;
+  max-width: 200px;
+  border-radius: 7px;
+  transition: padding 0.25s;
+
+  &:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightcoral;
+  }
+
+  &.selected {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: lightskyblue;
+    font-weight: bold;
+  }
+}

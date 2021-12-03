@@ -1,0 +1,12 @@
+<div *ngIf="anyParam">
+  <h3>Selected Phrase</h3>
+
+  <div><span>ID: </span>{{anyParam.id}}</div>
+  <div><span>Value: </span>{{anyParam.value}}</div>
+  <div><span>Language: </span>{{anyParam.language}}</div>
+
+  <div>
+    <button (click)="goToPhrasesList()">Go to Phrases List </button>
+  </div>
+
+</div>
